@@ -13,6 +13,7 @@ See [your demo video title here] (https://link_to_your_video)
 ## Screenshots
 
 <img src="screenshots/empty.png" height="400" alt="Screenshot1"/>
+<img src="screenshots/exercise_dropdown.png" height="400" alt="Screenshot1.5"/>
 <img src="screenshots/pushups_no_reps.png" height="400" alt="Screenshot2"/>
 <img src="screenshots/pushups_506_reps.png" height="400" alt="Screenshot3"/>
 <img src="screenshots/jumping_jacks_no_time.png" height="400" alt="Screenshot4"/>
