@@ -1,0 +1,424 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#ff4081"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/heart2" />
+    </RelativeLayout>
+
+    <!-- Shit for Weight-->
+    <TextView
+        android:id="@+id/weight_label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="15dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="@string/weight" />
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="5"
+        android:hint="@string/weight_hint"
+        android:inputType="number"
+        android:textColor="@color/colorAccent"
+        android:textSize="13sp"/>
+
+    <!-- Shit for Exercise Type-->
+    <TextView
+        android:id="@+id/exercise_label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="15dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="@string/exercise" />
+    <Spinner
+        android:id="@+id/dynamic_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+    <!--Shit for # of Reps/Minutes-->
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="15dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="@string/label" />
+
+    <EditText
+        android:id="@+id/amt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="5"
+        android:inputType="number"
+        android:textColor="@color/colorAccent"
+        android:textSize="13sp"
+        android:hint="@string/amt_hint" />
+
+    <!-- Shit for Num Cals Burned-->
+    <TextView
+        android:id="@+id/output_calories"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="@string/default_output"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="This equates to..."
+        android:textSize="20sp"
+        android:textAllCaps="true" />
+
+    <!-- Pushups, Situps, Squats-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pushup_reps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:gravity="center_horizontal"
+                android:text="0 reps" />
+
+            <TextView
+                android:id="@+id/pushup_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="9sp"
+                android:gravity="center_horizontal"
+                android:text="Pushups" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/situp_reps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:gravity="center_horizontal"
+                android:text="0 reps" />
+
+            <TextView
+                android:id="@+id/situp_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="9sp"
+                android:gravity="center_horizontal"
+                android:text="Situps" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/squat_reps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:gravity="center_horizontal"
+                android:text="0 reps" />
+
+            <TextView
+                android:id="@+id/squat_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="9sp"
+                android:gravity="center_horizontal"
+                android:text="Squats" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Leg-lifts, Plank, Jumping Jacks-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/leglift_reps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:gravity="center_horizontal"
+                android:text="0 reps" />
+
+            <TextView
+                android:id="@+id/leglift_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="9sp"
+                android:gravity="center_horizontal"
+                android:text="Leg-lifts" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/plank_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:gravity="center_horizontal"
+                android:text="0 min" />
+
+            <TextView
+                android:id="@+id/plank_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="9sp"
+                android:gravity="center_horizontal"
+                android:text="Plank" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/jj_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:gravity="center_horizontal"
+                android:text="0 min" />
+
+            <TextView
+                android:id="@+id/jj_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="9sp"
+                android:gravity="center_horizontal"
+                android:text="Jumping Jacks" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Pullups, Cycling, Walking-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pullup_reps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:gravity="center_horizontal"
+                android:text="0 reps" />
+
+            <TextView
+                android:id="@+id/pullup_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="9sp"
+                android:gravity="center_horizontal"
+                android:text="Pullups" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cycling_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:gravity="center_horizontal"
+                android:text="0 min" />
+
+            <TextView
+                android:id="@+id/cycling_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="9sp"
+                android:gravity="center_horizontal"
+                android:text="Cycling" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/walking_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:gravity="center_horizontal"
+                android:text="0 min" />
+
+            <TextView
+                android:id="@+id/walking_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="9sp"
+                android:gravity="center_horizontal"
+                android:text="Walking" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Jogging, Swimming, Stair-Climbing-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/jogging_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:gravity="center_horizontal"
+                android:text="0 min" />
+
+            <TextView
+                android:id="@+id/jogging_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="9sp"
+                android:gravity="center_horizontal"
+                android:text="Jogging" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/swimming_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:gravity="center_horizontal"
+                android:text="0 min" />
+
+            <TextView
+                android:id="@+id/swimming_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="9sp"
+                android:gravity="center_horizontal"
+                android:text="Swimming" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/stair_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:gravity="center_horizontal"
+                android:text="0 min" />
+
+            <TextView
+                android:id="@+id/stair_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="9sp"
+                android:gravity="center_horizontal"
+                android:text="Stair Climbing" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

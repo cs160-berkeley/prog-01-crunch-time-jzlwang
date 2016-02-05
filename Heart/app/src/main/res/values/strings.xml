@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Crunch Time</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="weight">Weight (in lbs): </string>
+    <string name="weight_hint"><i>Ex: 150</i></string>
+
+    <string name="label">Amount: </string>
+    <string name="amt_hint"><i>Ex: 30</i></string>
+
+    <string name="exercise">Exercise: </string>
+    <string-array name="brew_array">
+        <item>Choose an exercise</item>
+        <item>Pushups</item>
+        <item>Situps</item>
+        <item>Squats</item>
+        <item>Leg-lifts</item>
+        <item>Plank</item>
+        <item>Jumping Jacks</item>
+        <item>Pullups</item>
+        <item>Cycling</item>
+        <item>Walking</item>
+        <item>Jogging</item>
+        <item>Swimming</item>
+        <item>Stair-Climbing</item>
+    </string-array>
+    <string name="default_output">How many calories did I burn?</string>
+</resources>

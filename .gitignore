@@ -1,6 +1,6 @@
 # Built application files
-*.apk
-*.ap_
+# *.apk
+# *.ap_
 
 # Files for the Dalvik VM
 *.dex
@@ -13,8 +13,8 @@ bin/
 gen/
 
 # Gradle files
-.gradle/
-build/
+# .gradle/
+# build/
 
 # Local configuration file (sdk path, etc)
 local.properties
@@ -29,7 +29,7 @@ proguard/
 .navigation/
 
 # Android Studio captures folder
-captures/
+# captures/
 
 # Mac DS_Store files
 .DS_Store
