@@ -28,5 +28,3 @@ See [your demo video title here] (https://link_to_your_video)
 * A big thanks to the [Android API Guide](http://developer.android.com/guide/topics/ui/index.html) for teaching me 99% of how to create the app.
 * ahotbrew’s [Drop Down List Example](http://www.ahotbrew.com/android-dropdown-spinner-example/) was referenced for my spinner.
 * A lot of [Stack Overflow](http://stackoverflow.com/), if we’re being honest.
-
-*Feel free to enhance your README. For Markdown syntax, see [the GitHub Guides](https://guides.github.com/features/mastering-markdown/). Remove this line in your submission.*
