@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Crunch Time</string>
+    <string name="app_name">Heart</string>
     <string name="action_settings">Settings</string>
 
     <string name="weight">Weight (in lbs): </string>
